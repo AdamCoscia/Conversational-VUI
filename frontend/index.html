@@ -19,18 +19,18 @@
         <span class="app-title">CS 6456 Group Project</span>
       </div>
       <div class="flex-col">
-        <span>Press the 'Talk' button to talk with the system.</span>
-      </div>
-      <div class="flex-col" style="margin-left: auto">
-        <button>Talk</button>
+        <span>Press the 'Start recording' button to talk with the system.</span>
       </div>
     </div>
 
     <div class="main">
-      <div class="output flex-col" style="padding: 36px; flex-wrap: nowrap">
-        <div class="flex-row">
-          <div class="flex-col col1">
-            <span>Voice:</span>
+      <div id="output" class="flex-col" style="padding: 36px; flex-wrap: nowrap">
+        <div class="flex-row" style="align-items: center">
+          <div class="flex-col">
+            <button id="test-btn">Test voice</button>
+          </div>
+          <div class="flex-col">
+            <span>Voice Settings</span>
           </div>
           <div class="flex-col">
             <select id="voice-select"></select>
@@ -53,21 +53,19 @@
 
         <hr style="margin-top: 24px" />
 
-        <div class="flex-row">
-          <div class="flex-col col1">
-            <span>System:</span>
-          </div>
-          <div class="flex-col col2">
-            <span>I said these words</span>
-          </div>
+        <div class="flex-row" style="justify-content: center">
+          <button id="start-btn">Start recording</button>
         </div>
 
-        <div class="flex-row">
+        <div class="flex-row" style="text-decoration: underline">
           <div class="flex-col col1">
-            <span>User:</span>
+            <span>Speaker</span>
           </div>
           <div class="flex-col col2">
-            <span>I said these words</span>
+            <span>Confidence</span>
+          </div>
+          <div class="flex-col col3">
+            <span>Utterance</span>
           </div>
         </div>
       </div>
