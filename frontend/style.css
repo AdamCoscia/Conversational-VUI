@@ -1,0 +1,78 @@
+body,
+html {
+  margin: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+  height: inherit;
+  overflow: hidden;
+}
+
+hr {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.flex-row {
+  margin: -12px;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0 1 auto;
+}
+
+.flex-col {
+  padding: 12px;
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 1 auto;
+}
+
+.app-bar {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  width: 100vw;
+  background-color: #c4c4c4;
+  box-shadow: 0px 4px 10px 4px #aaa;
+  position: relative;
+  z-index: 10;
+}
+
+.app-title {
+  font-size: 18pt;
+  font-weight: 800 !important;
+}
+
+.main {
+  display: flex;
+  /** full height - app bar */
+  height: calc(100vh - 64px);
+  width: 100vw;
+  background-color: #eee;
+  overflow-y: auto;
+}
+
+.output > div:not(:first-child),
+.output form > div:not(:first-child) {
+  margin-top: 12px;
+}
+
+#pitch-value,
+#rate-value {
+  width: 32px;
+  text-align: right;
+}
+
+.col1 {
+  width: 64px;
+}
+
+.col2 {
+  /** full width - outer padding - column padding - col1 */
+  width: calc(100vw - 72px - 24px - 64px);
+}
