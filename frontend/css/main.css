@@ -1,0 +1,125 @@
+body,
+html {
+  margin: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+  font-size: 12pt;
+  height: inherit;
+  overflow: hidden;
+}
+
+hr {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.flex-row {
+  margin: -12px;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0 1 auto;
+}
+
+.flex-col {
+  padding: 12px;
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 1 auto;
+}
+
+.app-bar {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  width: 100vw;
+  min-width: 500px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+  position: relative;
+  z-index: 10;
+}
+
+.app-title {
+  font-size: 18pt;
+  font-weight: 800 !important;
+}
+
+.main {
+  display: flex;
+  /** full height - app bar */
+  height: calc(100vh - 64px);
+  width: 100vw;
+}
+
+#test-btn {
+  font-family: "Roboto", "sans-serif";
+  font-size: 14pt;
+  line-height: 2;
+  min-width: 128px;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+#voice-select {
+  font-family: "Roboto", "sans-serif";
+  font-size: 12pt;
+}
+
+#start-btn {
+  font-family: "Roboto", "sans-serif";
+  font-size: 14pt;
+  line-height: 2;
+  min-width: 224px;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+#showhide-btn {
+  font-family: "Roboto", "sans-serif";
+  font-size: 14pt;
+  line-height: 2;
+  min-width: 224px;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+#output-container {
+  width: 100vw;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+
+#output-container>.flex-row:not(:first-child) {
+  margin-top: 12px;
+}
+
+#output-text>.flex-row:not(:first-child) {
+  margin-top: 12px;
+  flex-wrap: nowrap;
+}
+
+#pitch-value,
+#rate-value {
+  width: 32px;
+  text-align: right;
+}
+
+.col1 {
+  width: 96px;
+}
+
+.col2 {
+  width: 72px;
+}
+
+.col3 {
+  width: 72px;
+}
+
+.col4 {
+  /** full width - padding - col1 - col2 - col3 */
+  width: calc(100vw - 161px - 96px - 72px - 72px);
+}
