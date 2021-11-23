@@ -492,6 +492,7 @@ function setAlarm(time, label, enabled, mute) {
         "Error"
       );
   }
+  console.log("alarms:");
   console.log(alarms);
 }
 
@@ -639,6 +640,7 @@ function deleteAlarm(time, label, mute) {
         );
     }
   }
+  console.log("alarms:");
   console.log(alarms);
 }
 
@@ -1140,6 +1142,7 @@ function editAlarmTime(time, label, newTime) {
         );
     }
   }
+  console.log("alarms:");
   console.log(alarms);
 }
 
@@ -1162,6 +1165,7 @@ function editAlarmLabel(time, label, newLabel) {
     deleteAlarm(oldTime, label, true); // mute system
     setAlarm(oldTime, newLabel, oldEnabled, true); // mute system
   }
+  console.log("alarms:");
   console.log(alarms);
 }
 
@@ -1403,6 +1407,7 @@ function editAlarmEnabled(time, label, newEnabled) {
       );
     }
   }
+  console.log("alarms:");
   console.log(alarms);
 }
 
@@ -1573,6 +1578,7 @@ function setEvent(time, label, duration, mute) {
         "Error"
       );
   }
+  console.log("events:");
   console.log(events);
 }
 
@@ -1718,6 +1724,7 @@ function deleteEvent(time, label, mute) {
         );
     }
   }
+  console.log("events:");
   console.log(events);
 }
 
@@ -2219,6 +2226,7 @@ function editEventTime(time, label, newTime) {
         );
     }
   }
+  console.log("events:");
   console.log(events);
 }
 
@@ -2241,6 +2249,7 @@ function editEventLabel(time, label, newLabel) {
     deleteEvent(oldTime, label, true);
     setEvent(oldTime, newLabel, oldDuration, true);
   }
+  console.log("events:");
   console.log(events);
 }
 
@@ -2262,6 +2271,7 @@ function editEventDuration(time, label, newDuration) {
     deleteEvent(oldTime, label, true);
     setEvent(oldTime, oldLabel, newDuration, true);
   }
+  console.log("events:");
   console.log(events);
 }
 
