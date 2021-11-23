@@ -23,7 +23,7 @@
  *     - compromise-numbers: https://github.com/spencermountain/compromise/tree/master/plugins/numbers
  *     - compromise-dates: https://github.com/spencermountain/compromise/tree/master/plugins/dates
  *
- *   Sentiment Analysis
+ *   Sentiment Analysis (not included in this build)
  *     - compendium-js: https://github.com/Ulflander/compendium-js
  *
  *   Assets
@@ -179,7 +179,7 @@ const cancelCommand = {
 /** ========================== INITIALIZATION ============================== */
 
 // attempt to start the system
-if (annyang && nlp && compromiseNumbers && compromiseDates && compendium) {
+if (annyang && nlp && compromiseNumbers && compromiseDates) {
   // all libraries available!
   // add various plugin to base compromise object
   nlp.extend(compromiseNumbers);
