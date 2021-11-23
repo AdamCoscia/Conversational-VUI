@@ -2,6 +2,8 @@
 
 A conversational voice user interface for the web.
 
+![Hero Shot](hero-shot.png "Hero Shot")
+
 ## Live Demo
 
 Test out the system here: <https://adamcoscia.github.io/sections/projects/Conversational-VUI/index.html>
