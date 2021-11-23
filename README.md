@@ -100,6 +100,7 @@ downloaded an alarm clock sound from
 
 ## File Structure
 
+```
 📦frontend
 ┣ 📂assets
 ┃ ┣ 📂audio
@@ -136,6 +137,7 @@ downloaded an alarm clock sound from
 ┃ ┃ ┗ 📜compromise.min.js
 ┃ ┗ 📜main.js
 ┗ 📜index.html
+```
 
 ## Credits
 
