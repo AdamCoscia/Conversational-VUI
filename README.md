@@ -8,6 +8,10 @@ A conversational voice user interface for the web.
 
 Test out the system here: <https://adamcoscia.github.io/sections/projects/Conversational-VUI/index.html>
 
+**NOTE**: Certain libraries that were used to build this tool (described below)
+only work on Chrome, Edge, and Safari browsers. Please open the link above
+using one of these browsers.
+
 ## Setup
 
 You will need an active internet connection to use the tool locally.
