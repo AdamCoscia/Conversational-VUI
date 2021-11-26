@@ -1,22 +1,27 @@
 # Conversational Voice User Interface (VUI)
 
-A conversational voice user interface for the web.
+A conversational voice user interface for the web. Set alarms and calendar events with only your voice!
 
 ## Live Demo
 
 Test out the system here: <https://adamcoscia.github.io/sections/projects/Conversational-VUI/index.html>
 
+**NOTE**: The `SpeechRecognition` interface of the Web Speech API only works on
+Chrome, Edge, and Safari browsers. Please open the link above using one of these
+browsers.
+
 ## Setup
 
-You will need an active internet connection to use the tool locally.
+The `SpeechRecognition` interface requires an active internet connection to use
+the tool locally.
 
-All you need to run the tool is a local HTTP server, e.g., such as the
-[`http.server`](https://docs.python.org/3/library/http.server.html) module that
-comes with [`Python 3`](https://www.python.org/).
+All you need to run the tool is a local HTTP server, e.g., the one that comes
+with the [`http.server`](https://docs.python.org/3/library/http.server.html)
+module for [`Python 3`](https://www.python.org/).
 
-Simply start the server rooted in this folder. Using `python` from the command
-line or terminal, navigate to this folder (e.g., `cd <path>/<to>/<here>`),
-and run `python -m http.server 8000`.
+Simply start the server rooted in this folder. For example, if using
+`Python 3`, then from the command line or terminal navigate to this folder
+(e.g., `cd <path>/<to>/<here>`) and run `python -m http.server 8000`.
 
 Then open your browser, type `localhost:8000` into the URL address bar, and
 you should see the application!
@@ -25,11 +30,11 @@ you should see the application!
 
 The tool is entirely client-side, browser-based, and written in pure JavaScript.
 
-Several JavaScript libraries such as `compromise` were downloaded and are
-loaded into the tool automatically. Other libraries such as `SpeechSynthesis`
-are built-in to some browser environments. The complete list of included
-libraries and a short of description of their purpose in this project is as
-follows:
+Third-party JavaScript libraries (`annyang`, `compromise`) were downloaded and
+are loaded into the tool automatically. Standard interfaces (`SpeechSynthesis`,
+`SpeechRecognition`, `HTMLAudioElement`) are built-in to browser environments
+by default. The complete list of included libraries and a short of description
+of their purpose in this project is as follows:
 
 ### Web Speech API
 
@@ -63,8 +68,8 @@ follows:
 
 - `HTMLAudioElement`: <https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement>
 
-  - Provides programmatic handling of sound embed in an HTML document. Used
-    to play the sound of an alarm clock when a user's alarm goes off.
+  - Provides access to embedded sounds in an HTML document. Used to play the
+    sound of an alarm clock when a user's alarm goes off.
 
 ### Topic Modeling, Text Extraction
 
@@ -111,21 +116,23 @@ downloaded an alarm clock sound from
 ┃ ┣ 📜favicon.ico
 ┃ ┗ 📜site.webmanifest
 ┗ 📂fonts
-┃ ┣ 📜fonts.css
-┃ ┣ 📜roboto-v27-latin-100.woff
-┃ ┣ 📜roboto-v27-latin-100.woff2
-┃ ┣ 📜roboto-v27-latin-300.woff
-┃ ┣ 📜roboto-v27-latin-300.woff2
-┃ ┣ 📜roboto-v27-latin-500.woff
-┃ ┣ 📜roboto-v27-latin-500.woff2
-┃ ┣ 📜roboto-v27-latin-700.woff
-┃ ┣ 📜roboto-v27-latin-700.woff2
-┃ ┣ 📜roboto-v27-latin-900.woff
-┃ ┣ 📜roboto-v27-latin-900.woff2
-┃ ┣ 📜roboto-v27-latin-regular.woff
-┃ ┗ 📜roboto-v27-latin-regular.woff2
+  ┣ 📜fonts.css
+  ┣ 📜roboto-v27-latin-100.woff
+  ┣ 📜roboto-v27-latin-100.woff2
+  ┣ 📜roboto-v27-latin-300.woff
+  ┣ 📜roboto-v27-latin-300.woff2
+  ┣ 📜roboto-v27-latin-500.woff
+  ┣ 📜roboto-v27-latin-500.woff2
+  ┣ 📜roboto-v27-latin-700.woff
+  ┣ 📜roboto-v27-latin-700.woff2
+  ┣ 📜roboto-v27-latin-900.woff
+  ┣ 📜roboto-v27-latin-900.woff2
+  ┣ 📜roboto-v27-latin-regular.woff
+  ┗ 📜roboto-v27-latin-regular.woff2
+
 📂css
 ┗ 📜main.css
+
 📂js
 ┣ 📂libs
 ┃ ┣ 📜annyang.min.js
@@ -133,13 +140,20 @@ downloaded an alarm clock sound from
 ┃ ┣ 📜compromise-numbers.min.js
 ┃ ┗ 📜compromise.min.js
 ┗ 📜main.js
+
 📜index.html
 ```
 
 ## Credits
 
-CS 6456 Group Project
+CS 6456 User Interface Software
+
+Georgia Institute of Technology
+
+Dr. Keith Edwards
 
 Fall 2021
 
-Adam Coscia
+### Team
+
+- Adam Coscia ([acoscia6@gatech.edu](mailto:acoscia6@gatech.edu))
