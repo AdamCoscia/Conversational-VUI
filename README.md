@@ -1,28 +1,30 @@
 # Conversational Voice User Interface (VUI)
 
-A conversational voice user interface for the web.
-
 ![Hero Shot](hero-shot.png "Hero Shot")
+
+A conversational voice user interface for the web. Set alarms and calendar events with only your voice!
 
 ## Live Demo
 
 Test out the system here: <https://adamcoscia.github.io/sections/projects/Conversational-VUI/index.html>
 
-**NOTE**: Certain libraries that were used to build this tool (described below)
-only work on Chrome, Edge, and Safari browsers. Please open the link above
-using one of these browsers.
+**NOTE**: The `SpeechRecognition` interface of the Web Speech API only works on
+Chrome, Edge, and Safari browsers. Please open the link above using one of these
+browsers.
 
 ## Setup
 
-You will need an active internet connection to use the tool locally.
+The `SpeechRecognition` interface requires an active internet connection to use
+the tool locally.
 
-All you need to run the tool is a local HTTP server, e.g., such as the
-[`http.server`](https://docs.python.org/3/library/http.server.html) module that
-comes with [`Python 3`](https://www.python.org/).
+All you need to run the tool is a local HTTP server, e.g., the one that comes
+with the [`http.server`](https://docs.python.org/3/library/http.server.html)
+module for [`Python 3`](https://www.python.org/).
 
-Simply start the server rooted in the `/frontend` folder. Using `python` from
-the command line or terminal, navigate to the folder
-(e.g., `cd <path>/<to>/frontend`), and run `python -m http.server 8000`.
+Simply start the server rooted in the `/frontend` folder. For example, if using
+`Python 3`, then from the command line or terminal navigate to the folder
+containing `index.html` (e.g., `cd <path>/<to>/frontend`) and run
+`python -m http.server 8000`.
 
 Then open your browser, type `localhost:8000` into the URL address bar, and
 you should see the application!
@@ -31,11 +33,11 @@ you should see the application!
 
 The tool is entirely client-side, browser-based, and written in pure JavaScript.
 
-Several JavaScript libraries such as `compromise` were downloaded and are
-loaded into the tool automatically. Other libraries such as `SpeechSynthesis`
-are built-in to some browser environments. The complete list of included
-libraries and a short of description of their purpose in this project is as
-follows:
+Third-party JavaScript libraries (`annyang`, `compromise`) were downloaded and
+are loaded into the tool automatically. Standard interfaces (`SpeechSynthesis`,
+`SpeechRecognition`, `HTMLAudioElement`) are built-in to browser environments
+by default. The complete list of included libraries and a short of description
+of their purpose in this project is as follows:
 
 ### Web Speech API
 
@@ -69,8 +71,8 @@ follows:
 
 - `HTMLAudioElement`: <https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement>
 
-  - Provides programmatic handling of sound embed in an HTML document. Used
-    to play the sound of an alarm clock when a user's alarm goes off.
+  - Provides access to embedded sounds in an HTML document. Used to play the
+    sound of an alarm clock when a user's alarm goes off.
 
 ### Topic Modeling, Text Extraction
 
@@ -145,10 +147,14 @@ downloaded an alarm clock sound from
 
 ## Credits
 
+CS 6456 User Interface Software
+
 Georgia Institute of Technology
 
-CS 6456 User Interface Software
+Dr. Keith Edwards
 
 Fall 2021
 
-Adam Coscia
+### Team
+
+- Adam Coscia ([acoscia6@gatech.edu](mailto:acoscia6@gatech.edu))
