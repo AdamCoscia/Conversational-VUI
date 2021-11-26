@@ -145,7 +145,9 @@ downloaded an alarm clock sound from
 
 ## Credits
 
-CS 6456 Group Project
+Georgia Institute of Technology
+
+CS 6456 User Interface Software
 
 Fall 2021
 
